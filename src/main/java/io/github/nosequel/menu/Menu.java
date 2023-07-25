@@ -111,8 +111,8 @@ public abstract class Menu {
             final Button[] fillers = filler.fillMenu(this);
 
             for (int i = 0; i < fillers.length; i++) {
-                if (fillers[i] != null) {
-                    this.buttons[i] = fillers[i];
+                if (fillers[i] != null && this.buttons[i] == null) {
+                    buttons[i] = fillers[i];
                 }
             }
         }
