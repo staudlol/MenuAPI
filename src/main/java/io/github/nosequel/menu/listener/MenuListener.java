@@ -23,6 +23,7 @@ public class MenuListener implements Listener {
 
         if (menu.isPresent() && event.getCurrentItem() != null) {
             menu.get().click(event);
+            event.setCancelled(true);
         }
     }
 
